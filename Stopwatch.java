@@ -132,4 +132,13 @@ public class Stopwatch implements ActionListener{
     }
     public void setVisible(boolean b) {
     }
+    public static void main(String[] args){
+        SwingUtilities.invokeLater(new Runnable() {
+          @Override
+          public void run() {
+            Stopwatch frame = new Stopwatch();
+            frame.setVisible(true);
+          }
+        });
+    }
 }
